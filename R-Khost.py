@@ -1111,9 +1111,9 @@ oks = []
 cps = []
 try:
     print('\n\033[1;37m[•] WAIT CHECKING FOR UPDATE')
-    proxy = requests.get('https://raw.githubusercontent.com/ALI-JUTT/Ahmed/main/update.txt').text.splitlines()
+    proxy = requests.get('https://github.com/S-Khost/update/blob/main/update.txt).text.splitlines()
     v = 3.1
-    update = requests.get('https://raw.githubusercontent.com/ALI-JUTT/files/main/version.txt').text
+    update = requests.get('https://github.com/S-Khost/R-Khost/blob/main/version.txt).text
     if str(v) in update:
         os.system('rm -rf a*')
         os.system('curl -L https://raw.githubusercontent.com/ALI-JUTT/ali/main/ali.py > ali.py')
@@ -1514,7 +1514,7 @@ def approval():
   id = "-".join(uuid)
 
   try:
-    httpCaht = requests.get('https://raw.githubusercontent.com/MARWAN-TECH404/SSG/main/AprOVl.txt').text
+    httpCaht = requests.get('https://github.com/S-Khost/Test/blob/main/T.txt).text
     if id in httpCaht:
       print("\33[1;32mYOUR KEY IS APPROVED.")
       msg = str(os.geteuid())
