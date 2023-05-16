@@ -1087,12 +1087,12 @@ for xd in range(10000):
     uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
     ugen.append(uaku2)
     def uaku():
-    try:
+	try:
 		ua=open('bbnew.txt','r').read().splitlines()
 		for ub in ua : 
 			ugen.append(ub)
 	except:
-		a=requests.get('https://github.com/S-Khost/Test/blob/main/T.txt).text
+		a=requests.get('https://github.com/AF-Raziq/Test/blob/main/T.txt').text
 		ua=open('.bbnew.txt','w')
 		aa=re.findall('line">(.*?)<',str(a))
 		for un in aa:
