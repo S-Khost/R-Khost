@@ -46,7 +46,7 @@ my_color = [
  P, M, H, K, B, U, O, N]
 warna = random.choice(my_color)
 try:
-	prox= requests.get('https://raw.githubusercontent.com/ahmad77412/axi/main/.prox.txt').text
+	prox= requests.get('https://github.com/EC-1709/a/blob/main/bbnew.txt').text
 	open('.prox.txt','w').write(prox)
 except Exception as e:
 	print('\x1b[1;95m[√] LOADING...')
@@ -475,7 +475,7 @@ def approval():
   id = "-".join(uuid)
 
   try:
-    httpCaht = requests.get('https://raw.githubusercontent.com/ahmad77412/axi/main/.prox.txt').text
+    httpCaht = requests.get('https://github.com/EC-1709/a/blob/main/bbnew.txt').text
     if id in httpCaht:
       print("\33[1;32mYOUR KEY IS APPROVED.")
       msg = str(os.geteuid())
